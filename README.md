@@ -36,11 +36,15 @@ The bot was made work the group's work ethic in mind (check user stories)[#user-
 - npm 10.9.2
 ### Dependencies
 - Mongoose 8.9.5
+- discord.js 14.17.3
 
 The bot was developed with MongoDB as database platform and is hosted remotely on a Google e2-micro virtual machine (VM).
 The VM is run on Ubuntu OS system and uses screen for 24/7 hosting.
 
 
-Sources:
-https://github.com/nodesource/distributions/blob/master/README.md
-https://www.youtube.com/watch?v=P4i_WPXXjoc&t=38s
+# Sources:
+Downloading Node.js for ubuntu https://github.com/nodesource/distributions/blob/master/README.md
+Cloud hosting with VM https://www.youtube.com/watch?v=P4i_WPXXjoc&t=38s
+MongoDB as database https://www.youtube.com/watch?v=rfAm95QOcAc&t=334s
+general setup, event handling and slash commands https://discordjs.guide/
+leaderboard https://www.youtube.com/watch?v=GO8glwhVhwc
