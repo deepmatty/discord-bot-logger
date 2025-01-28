@@ -19,7 +19,7 @@ Late attendance is marked with a 'cross'. For every 5 minute the member is late 
 # Functionality 
 The bot was made work the group's work ethic in mind (check user stories)[#user-stories]. For each functionality, there is a number corresponding to the user story.
 
-logger has the following commands:
+## Command list: 
 
 **/cross** - the user can see how many crosses they have (1)
 
@@ -31,7 +31,14 @@ logger has the following commands:
 
 
 # Tools
-The bot was developed with MongoDB as database platform and is hosted remotely on a Google e2-micro virtual machine
+## Requirements
+- Node.js v23.6.1
+- npm 10.9.2
+### Dependencies
+- Mongoose 8.9.5
+
+The bot was developed with MongoDB as database platform and is hosted remotely on a Google e2-micro virtual machine (VM).
+The VM is run on Ubuntu OS system and uses screen for 24/7 hosting.
 
 
 Sources:
