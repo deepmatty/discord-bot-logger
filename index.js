@@ -1,7 +1,17 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const {Client, Events, GatewayIntentBits, Collection, MessageFlags} = require('discord.js');
-const {token} = require('./config.json');
+const {token , mongodbServer} = require('./config.json');
+const mongoose = require('mongoose');
+
+
+mongoose.connect(mongodbServer)
+    .then(() => {
+        console.log("Connected to database");
+    })
+    .catch((err) => {
+        console.log(err);
+    });
 
 const client = new Client({
     intents: [
