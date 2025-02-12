@@ -12,7 +12,7 @@ module.exports = {
     const { crosses } = profileData;
 
     //finding server nickname
-    const member = await interaction.guild.members.fetch(recievedUser.id);
+    const member = await interaction.guild.members.fetch(id);
     const serverNickname = member.nickname || recievedUser.username;
 
     let leaderboardEmbed = new EmbedBuilder()
