@@ -8,12 +8,12 @@ module.exports = {
     .setDescription("Rank of members"),
   async execute(interaction, profileData) {
     await interaction.deferReply();
-    const { username, id } = interaction.user;
+    const { id } = interaction.user;
     const { crosses } = profileData;
 
     //finding server nickname
     const member = await interaction.guild.members.fetch(id);
-    const serverNickname = member.nickname || recievedUser.username;
+    const serverNickname = member.nickname || member.user.username;
 
     let leaderboardEmbed = new EmbedBuilder()
       .setTitle("** Cross Leaderboard **")
